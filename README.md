@@ -1,7 +1,9 @@
 # My first webGL experience
 Here is my homework in three.js, I chose to create a black hole.
 
-#### I don't understand why my favicon is not working
+# To run it you must 
+`<npm i>`
+`<npm run dev>`
 
 ## Features
  - You can move your cursor to change the POV
@@ -12,3 +14,4 @@ Here is my homework in three.js, I chose to create a black hole.
  - More controls for dat.gui
 
 ### I Hope you will enjoy
+#### I don't understand why my favicon is not working
