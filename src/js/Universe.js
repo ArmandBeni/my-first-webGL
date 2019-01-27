@@ -27,16 +27,16 @@ export default class Universe
             vertice.z = distance * Math.cos(theta) * 3
     
             this.stars.geometry.vertices.push(vertice)
-            }
+        }
     
-            this.stars.material = new THREE.PointsMaterial
-            ({
-                size: 1,
-                color: 0xffffff,
-                sizeAttenuation: true,
-            })
+        this.stars.material = new THREE.PointsMaterial
+        ({
+            size: 1,
+            color: 0xffffff,
+            sizeAttenuation: true,
+        })
     
-            this.stars.points = new THREE.Points(this.stars.geometry, this.stars.material)
-            this.container.add(this.stars.points)
+        this.stars.points = new THREE.Points(this.stars.geometry, this.stars.material)
+        this.container.add(this.stars.points)
     }
 }

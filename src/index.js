@@ -28,7 +28,6 @@ window.addEventListener('resize', () =>
 
     //update renderer
     renderer.setSize(sizes.width, sizes.height)
-
 })
 
 
@@ -94,7 +93,8 @@ renderer.render(scene, camera)
  * Postprocessing JS for the bloomeffect
  */
 const composer = new EffectComposer(renderer)
-let bloomEffect = new BloomEffect({
+let bloomEffect = new BloomEffect
+({
     resolutionScale: 1,
     distinction: 1
 })

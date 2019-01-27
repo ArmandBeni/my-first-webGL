@@ -41,7 +41,7 @@ export default class Particles
         ({
             size: 1,
             color: 0x007fff,
-            sizeAttenuation: true,           
+            sizeAttenuation: true      
         })
 
         this.belt.points = new THREE.Points(this.belt.geometry, this.belt.material)
@@ -69,11 +69,11 @@ export default class Particles
             this.belt2.geometry.vertices.push(vertice2)
         }
 
-            this.belt2.material = new THREE.PointsMaterial
+        this.belt2.material = new THREE.PointsMaterial
         ({
             size: 1,
             color: 0xff00ff,
-            sizeAttenuation: true,
+            sizeAttenuation: true
         })
 
         this.belt2.points = new THREE.Points(this.belt2.geometry, this.belt2.material)
@@ -100,11 +100,11 @@ export default class Particles
             this.belt3.geometry.vertices.push(vertice3)
         }
 
-            this.belt3.material = new THREE.PointsMaterial
+        this.belt3.material = new THREE.PointsMaterial
         ({
             size: 1,
             color: 0xffff00,
-            sizeAttenuation: true,
+            sizeAttenuation: true
         })
 
         this.belt3.points = new THREE.Points(this.belt3.geometry, this.belt3.material)
@@ -118,7 +118,7 @@ export default class Particles
     
         let d = 0
         for (let i = 0; i < 1500; i++)
-            {
+        {
             d += 0.7
             const angle4 = d
             const distance4 = 6.5 + d
@@ -131,11 +131,11 @@ export default class Particles
             this.belt4.geometry.vertices.push(vertice3)
         }
     
-            this.belt4.material = new THREE.PointsMaterial
+        this.belt4.material = new THREE.PointsMaterial
         ({
             size: 1,
             color: 0xffffff,
-            sizeAttenuation: true,
+            sizeAttenuation: true
         })
     
         this.belt4.points = new THREE.Points(this.belt4.geometry, this.belt4.material)
@@ -153,18 +153,21 @@ export default class Particles
             this.rotationY = 0
             this.speed = 0
         }
+
         let vertice2 = function()
         {
             this.rotationX = 0
             this.rotationY = 0
             this.speed = 0
         }
+
         let vertice3 = function()
         {
             this.rotationX = 0
             this.rotationY = 0
             this.speed = 0
         }
+
         let vertice4 = function()
         {
             this.rotationX = 0
@@ -222,7 +225,6 @@ export default class Particles
             this.belt4.points.rotation.y = myVertice4.rotationY
             this.container.rotation.y += parseFloat(myVertice4.speed)
             this.container.rotation.x += parseFloat(myVertice4.speed)
-       
         }
         loop()
     }

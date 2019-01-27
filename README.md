@@ -2,7 +2,7 @@
 Here is my homework in three.js, I chose to create a black hole.
 
 # To run it you must 
-`npm install` to install the packages and `npm run dev` to run the localserver, in your terminal
+In your terminal write down `npm install` to install the packages and `npm run dev` to run the localserver
 
 ## Features
  - You can move your cursor to change the POV
@@ -14,4 +14,3 @@ Here is my homework in three.js, I chose to create a black hole.
  - Add another black hole
 
 ### I Hope you will enjoy
-#### I don't understand why my favicon is not working

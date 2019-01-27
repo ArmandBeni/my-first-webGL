@@ -37,8 +37,8 @@ export default class Shader
                     float intensity = pow( 0.7 - dot( vNormal, vec3( 0.0, 0.0, 1.8 ) ), 0.5 ); 
                     gl_FragColor = vec4( 0.0, 4.0, 5.0, 0.0 ) * intensity;
                 }
-                `,
-            })
+            `,
+        })
 
         this.element.mesh = new THREE.Mesh(this.element.geometry, this.element.material)
         this.container.add(this.element.mesh)
